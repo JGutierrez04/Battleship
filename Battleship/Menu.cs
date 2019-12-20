@@ -23,8 +23,7 @@ namespace Battleship
             Selection selection = new Selection();
             selection.Show();
             Menu03 menu = new Menu03();
-            menu.Hide();
-            
+            menu.Close();
         }
     }
 }

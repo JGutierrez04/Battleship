@@ -56,6 +56,7 @@
             this.btnBoard7.TabIndex = 0;
             this.btnBoard7.Text = "7x7 Board";
             this.btnBoard7.UseVisualStyleBackColor = true;
+            this.btnBoard7.Click += new System.EventHandler(this.btnBoard7_Click);
             // 
             // btnBoard10
             // 
@@ -105,6 +106,7 @@
             this.btnSubmarine.Text = "Submarine";
             this.btnSubmarine.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSubmarine.UseVisualStyleBackColor = true;
+            this.btnSubmarine.Click += new System.EventHandler(this.btnSubmarine_Click);
             // 
             // btnMedical
             // 

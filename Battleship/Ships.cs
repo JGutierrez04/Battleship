@@ -17,26 +17,68 @@ namespace Battleship
         { get { return shipname; }set { shipname = value; } }
         public int Health
         { get { return health; } set { health = value; } }
+        //Ships frigate = new Ships();
+
+        
 
         public Ships()
-        {
+        {   
             shipname = "";
             shotsLeft = 0;
             health = 0;
             Nuke = false;
         }
         
-        public Ships(string a)
+        public Ships(string input, int num, bool check)
+        {
+            shipname = input;
+            shotsLeft = num;
+            health = num;
+            Nuke = check;
+        }
+
+        public void Frigate()
         {
             shipname = "Frigate";
-            shotsLeft = 1;
-            health = 3;
+            shotsLeft = 2;
+            health = 2;
             Nuke = false;
         }
 
-        public Ships(string a, string b)
+        public void Submarine()
         {
-
+            shipname = "Submarine";
+            shotsLeft = 2;
+            health = 2;
+            Nuke = false;
+        }
+        public void Destroyer()
+        {
+            shipname = "Destroyer";
+            shotsLeft = 3;
+            health = 3;
+            Nuke = false;
+        }
+        public void Battleship()
+        {
+            shipname = "Battleship";
+            shotsLeft = 3;
+            health = 3;
+            Nuke = false;
+        }
+        public void AirCarrier()
+        {
+            shipname = "Aircraft Carrier";
+            shotsLeft = 2;
+            health = 2;
+            Nuke = false;
+        }
+        public void Medical()
+        {
+            shipname = "Medical";
+            shotsLeft = 2;
+            health = 2;
+            Nuke = false;
         }
 
         public void Damage()

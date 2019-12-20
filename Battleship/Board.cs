@@ -31,14 +31,15 @@ namespace Battleship
             int amount = 3;
         }
 
-        public Board(int s, int m)
+        public Board(double m)
         {
             int[,] size = new int[10, 10];
             Style = "Sea";
             int amount = 4;
+            
         }
 
-        public Board(int s, int m, int l)
+        public Board(string l)
         {
             int[,] size = new int[20, 20];
             Style = "Ocean";
