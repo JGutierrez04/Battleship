@@ -31,7 +31,7 @@ namespace Battleship
             int amount = 3;
         }
 
-        public Board(double m)
+        public Board(int s, int m)
         {
             int[,] size = new int[10, 10];
             Style = "Sea";
@@ -39,7 +39,7 @@ namespace Battleship
             
         }
 
-        public Board(string l)
+        public Board(int s, int m, int l)
         {
             int[,] size = new int[20, 20];
             Style = "Ocean";

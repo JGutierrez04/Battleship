@@ -76,9 +76,11 @@
             this.btnBoard20.TabIndex = 2;
             this.btnBoard20.Text = "20x20 Board";
             this.btnBoard20.UseVisualStyleBackColor = true;
+            this.btnBoard20.Click += new System.EventHandler(this.btnBoard20_Click);
             // 
             // btnAirCraft
             // 
+            this.btnAirCraft.Enabled = false;
             this.btnAirCraft.Location = new System.Drawing.Point(403, 186);
             this.btnAirCraft.Name = "btnAirCraft";
             this.btnAirCraft.Size = new System.Drawing.Size(176, 92);
@@ -86,9 +88,11 @@
             this.btnAirCraft.Text = "Aircraft Carrier";
             this.btnAirCraft.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAirCraft.UseVisualStyleBackColor = true;
+            this.btnAirCraft.Click += new System.EventHandler(this.btnAirCraft_Click);
             // 
             // btnFrigate
             // 
+            this.btnFrigate.Enabled = false;
             this.btnFrigate.Location = new System.Drawing.Point(212, 186);
             this.btnFrigate.Name = "btnFrigate";
             this.btnFrigate.Size = new System.Drawing.Size(185, 92);
@@ -96,9 +100,11 @@
             this.btnFrigate.Text = "Frigate";
             this.btnFrigate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnFrigate.UseVisualStyleBackColor = true;
+            this.btnFrigate.Click += new System.EventHandler(this.btnFrigate_Click);
             // 
             // btnSubmarine
             // 
+            this.btnSubmarine.Enabled = false;
             this.btnSubmarine.Location = new System.Drawing.Point(28, 186);
             this.btnSubmarine.Name = "btnSubmarine";
             this.btnSubmarine.Size = new System.Drawing.Size(178, 92);
@@ -110,6 +116,7 @@
             // 
             // btnMedical
             // 
+            this.btnMedical.Enabled = false;
             this.btnMedical.Location = new System.Drawing.Point(403, 325);
             this.btnMedical.Name = "btnMedical";
             this.btnMedical.Size = new System.Drawing.Size(176, 92);
@@ -117,9 +124,11 @@
             this.btnMedical.Text = "Medical";
             this.btnMedical.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMedical.UseVisualStyleBackColor = true;
+            this.btnMedical.Click += new System.EventHandler(this.btnMedical_Click);
             // 
             // btnBattleShip
             // 
+            this.btnBattleShip.Enabled = false;
             this.btnBattleShip.Location = new System.Drawing.Point(212, 325);
             this.btnBattleShip.Name = "btnBattleShip";
             this.btnBattleShip.Size = new System.Drawing.Size(185, 92);
@@ -127,9 +136,11 @@
             this.btnBattleShip.Text = "Battleship";
             this.btnBattleShip.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBattleShip.UseVisualStyleBackColor = true;
+            this.btnBattleShip.Click += new System.EventHandler(this.btnBattleShip_Click);
             // 
             // btnDestroyer
             // 
+            this.btnDestroyer.Enabled = false;
             this.btnDestroyer.Location = new System.Drawing.Point(28, 325);
             this.btnDestroyer.Name = "btnDestroyer";
             this.btnDestroyer.Size = new System.Drawing.Size(178, 92);
@@ -137,6 +148,7 @@
             this.btnDestroyer.Text = "Destroyer";
             this.btnDestroyer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDestroyer.UseVisualStyleBackColor = true;
+            this.btnDestroyer.Click += new System.EventHandler(this.btnDestroyer_Click);
             // 
             // btnBack
             // 
