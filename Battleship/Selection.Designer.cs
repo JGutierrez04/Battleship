@@ -66,7 +66,7 @@
             this.btnBoard10.TabIndex = 1;
             this.btnBoard10.Text = "10x10 Board";
             this.btnBoard10.UseVisualStyleBackColor = true;
-            this.btnBoard10.Click += new System.EventHandler(this.button2_Click);
+            this.btnBoard10.Click += new System.EventHandler(this.btnBoard10_Click);
             // 
             // btnBoard20
             // 
@@ -88,7 +88,7 @@
             this.btnAirCraft.Text = "Aircraft Carrier";
             this.btnAirCraft.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAirCraft.UseVisualStyleBackColor = true;
-            this.btnAirCraft.Click += new System.EventHandler(this.btnAirCraft_Click);
+            this.btnAirCraft.Click += new System.EventHandler(this.btnAircraft_Click);
             // 
             // btnFrigate
             // 
@@ -136,7 +136,7 @@
             this.btnBattleShip.Text = "Battleship";
             this.btnBattleShip.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBattleShip.UseVisualStyleBackColor = true;
-            this.btnBattleShip.Click += new System.EventHandler(this.btnBattleShip_Click);
+            this.btnBattleShip.Click += new System.EventHandler(this.btnBattleship_Click);
             // 
             // btnDestroyer
             // 
@@ -158,7 +158,7 @@
             this.btnBack.TabIndex = 9;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.button1_Click);
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnReset
             // 
@@ -168,6 +168,7 @@
             this.btnReset.TabIndex = 10;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnRandom
             // 

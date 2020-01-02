@@ -10,105 +10,117 @@ using System.Windows.Forms;
 
 namespace Battleship
 {
-    
     public partial class Selection : Form
     {
-        Board board = new Board();
-        Ships ships = new Ships();
         public Selection()
         {
             InitializeComponent();
         }
+
         
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Board sea = new Board(1, 2);
-            ButtonControl();
-
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
+        private int numAllowed = 0;
+        private int numSelected = 0;
+        private Ships[] shipChoices;
 
         private void btnBoard7_Click(object sender, EventArgs e)
         {
-            Board lake = new Board(1);
-            ButtonControl();
-
-            
+            shipChoices = new Ships[3];
+            numAllowed = 3;
+            SizeChoice();
         }
 
-        private void btnSubmarine_Click(object sender, EventArgs e)
+        private void btnBoard20_Click(object sender, EventArgs e)
         {
-            ships.Submarine();
-            lblStats.Text += ships.ShipName + "\n";
-            btnSubmarine.Enabled = false;
+            shipChoices = new Ships[5];
+            numAllowed = 5;
+            SizeChoice();
+        }
+
+        private void btnBoard10_Click(object sender, EventArgs e)
+        {
+            shipChoices = new Ships[4];
+            numAllowed = 4;
+            SizeChoice();
+        }
+
+        private void SizeChoice()
+        {
+            btnBattleShip.Enabled = true; btnAirCraft.Enabled = true; btnMedical.Enabled = true; btnFrigate.Enabled = true; btnSubmarine.Enabled = true; btnDestroyer.Enabled = true;
+            btnBoard10.Enabled = false; btnBoard7.Enabled = false; btnBoard20.Enabled = false;
+        }
+
+        private void btnAircraft_Click(object sender, EventArgs e)
+        {
+            Ships aircraft = new Ships("a", "b", "c");
+            BoatChoice(aircraft);
+            btnAirCraft.Enabled = false;
+
+        }
+
+        private void btnBattleship_Click(object sender, EventArgs e)
+        {
+            Ships battle = new Ships("a", "b", "c", "d");
+            BoatChoice(battle);
+            btnBattleShip.Enabled = false;
         }
 
         private void btnFrigate_Click(object sender, EventArgs e)
         {
-            ships.Frigate();
-            lblStats.Text += ships.ShipName + "\n";
+            Ships frig = new Ships("a");
+            BoatChoice(frig);
             btnFrigate.Enabled = false;
         }
 
         private void btnMedical_Click(object sender, EventArgs e)
         {
-            ships.Medical();
-            lblStats.Text += ships.ShipName + "\n";
+            Ships med = new Ships();
+            BoatChoice(med);
             btnMedical.Enabled = false;
         }
 
-        private void btnBattleShip_Click(object sender, EventArgs e)
+        private void btnSubmarine_Click(object sender, EventArgs e)
         {
-            ships.Battleship();
-            lblStats.Text += ships.ShipName + "\n";
-            btnBattleShip.Enabled = false;
+            Ships sub = new Ships();
+            BoatChoice(sub);
+            btnSubmarine.Enabled = false;
         }
 
         private void btnDestroyer_Click(object sender, EventArgs e)
         {
-            ships.Destroyer();
-            lblStats.Text += ships.ShipName + "\n";
+            Ships dest = new Ships("a", "b");
+            BoatChoice(dest);
             btnDestroyer.Enabled = false;
         }
 
-        private void btnAirCraft_Click(object sender, EventArgs e)
+        private void BoatChoice(Ships boat)
         {
-            ships.AirCarrier();
-            lblStats.Text += ships.ShipName + "\n";
-            btnAirCraft.Enabled = false;
+            if (numSelected <= numAllowed)
+            {
+                shipChoices[numSelected] = boat;
+                lblStats.Text += boat.ShipName + "\n";
+                numSelected++;
+            }
+            if (numSelected == numAllowed)
+            {
+                MessageBox.Show("Max Ships Chosen");
+                btnDestroyer.Enabled = false; btnSubmarine.Enabled = false; btnMedical.Enabled = false; btnFrigate.Enabled = false; btnBattleShip.Enabled = false; btnAirCraft.Enabled = false;
+
+            }
         }
 
-        private void btnBoard20_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
-            Board ocean = new Board(1, 2, 3);
-            ButtonControl();
-            
-        }
-        public void DisableButton()
-        {
-            btnBoard7.Enabled = false;
-            btnBoard10.Enabled = false;
-            btnBoard20.Enabled = false;
+            btnDestroyer.Enabled = false; btnSubmarine.Enabled = false; btnMedical.Enabled = false; btnFrigate.Enabled = false; btnBattleShip.Enabled = false; btnAirCraft.Enabled = false;
+            btnBoard10.Enabled = true; btnBoard7.Enabled = true; btnBoard20.Enabled = true;
+            lblStats.Text = "";
+            Array.Clear(shipChoices, 0, shipChoices.Length);
+            numSelected = 0;
+            numAllowed = 0;
         }
 
-        public void EnableButton()
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            btnBattleShip.Enabled = true;
-            btnAirCraft.Enabled = true;
-            btnMedical.Enabled = true;
-            btnFrigate.Enabled = true;
-            btnDestroyer.Enabled = true;
-            btnSubmarine.Enabled = true;
-        }
-        public void ButtonControl()
-        {
-            EnableButton();
-            DisableButton();
+
         }
     }
 }

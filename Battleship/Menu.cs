@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,23 +8,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace Battleship
 {
-    public partial class Menu03 : Form 
+    public partial class Menu : Form 
     {
-        public Menu03()
+        public Menu()
         {
             InitializeComponent();
         }
 
         private void btnNewGame_Click(object sender, EventArgs e)
         {
-            Selection selection = new Selection();
-            selection.Show();
-            Menu03 menu = new Menu03();
-            menu.Close();
+            Selection form = new Selection();
+            form.Show();
+            Menu form1 = new Menu();
+            form1.Close();
+
+            Human human = new Human();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Battleship
 {
     sealed class Board
     {
-        private int[,] size;
+       
         public string Style { get; set; }
         private int amount;
 

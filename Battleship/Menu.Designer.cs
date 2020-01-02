@@ -1,6 +1,6 @@
 ﻿namespace Battleship
 {
-    partial class Menu03
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -92,7 +92,7 @@
             this.lblBattleShip.TabIndex = 6;
             this.lblBattleShip.Text = "BattleShip";
             // 
-            // Menu03
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -103,7 +103,7 @@
             this.Controls.Add(this.btnStats);
             this.Controls.Add(this.btnResumeGame);
             this.Controls.Add(this.btnNewGame);
-            this.Name = "Menu03";
+            this.Name = "Menu";
             this.Text = "Menu";
             ((System.ComponentModel.ISupportInitialize)(this.pbxBattleShip)).EndInit();
             this.ResumeLayout(false);
