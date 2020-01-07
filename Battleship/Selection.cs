@@ -51,7 +51,7 @@ namespace Battleship
 
         private void btnAircraft_Click(object sender, EventArgs e)
         {
-            Ships aircraft = new Ships("a", "b", "c");
+            Ships aircraft = new Ships("a", "b");
             BoatChoice(aircraft);
             btnAirCraft.Enabled = false;
 
@@ -73,7 +73,7 @@ namespace Battleship
 
         private void btnMedical_Click(object sender, EventArgs e)
         {
-            Ships med = new Ships();
+            Ships med = new Ships("a","b","c","d","e");
             BoatChoice(med);
             btnMedical.Enabled = false;
         }
@@ -87,7 +87,7 @@ namespace Battleship
 
         private void btnDestroyer_Click(object sender, EventArgs e)
         {
-            Ships dest = new Ships("a", "b");
+            Ships dest = new Ships("a","b","c");
             BoatChoice(dest);
             btnDestroyer.Enabled = false;
         }

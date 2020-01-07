@@ -22,7 +22,7 @@ namespace Battleship
 
         public Ships()
         {
-            shipname = "Subs";
+            shipname = "Submarine";
             shotsLeft = 0;
             health = 0;
             Nuke = false;
@@ -79,6 +79,11 @@ namespace Battleship
         public void ShotFired()
         {
             shotsLeft--;
+        }
+
+        public void NukeShot()
+        {
+            
         }
     }
 }

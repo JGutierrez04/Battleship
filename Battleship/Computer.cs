@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    class Computer : Player
+    sealed class Computer : Player
     {
+        
+        public override void ShipSelect()
+        {
 
+        }
+        public override void Firing()
+        {
+
+        }
     }
 }

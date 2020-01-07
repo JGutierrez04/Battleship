@@ -72,6 +72,7 @@
       <DependentUpon>Selection.cs</DependentUpon>
     </Compile>
     <Compile Include="Ships.cs" />
+    <Compile Include="Sound.cs" />
     <EmbeddedResource Include="Battleships.resx">
       <DependentUpon>Battleships.cs</DependentUpon>
     </EmbeddedResource>
