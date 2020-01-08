@@ -27,5 +27,11 @@ namespace Battleship
 
             Human human = new Human();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            Sound sound = new Sound();
+            sound.Theme();
+        }
     }
 }

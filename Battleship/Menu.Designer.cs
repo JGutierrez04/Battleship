@@ -105,6 +105,7 @@
             this.Controls.Add(this.btnNewGame);
             this.Name = "Menu";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxBattleShip)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

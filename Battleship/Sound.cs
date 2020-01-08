@@ -9,12 +9,12 @@ namespace Battleship
 {
     class Sound
     {
-        System.Media.SoundPlayer theme = new System.Media.SoundPlayer(@"E:\Music BattleShip\Pirate Music");
-        System.Media.SoundPlayer cannon = new System.Media.SoundPlayer(@"E:\Music BattleShip\Cannon");
-        System.Media.SoundPlayer gameOver = new System.Media.SoundPlayer(@"E:\Music BattleShip\Losing Trumpet");
-        System.Media.SoundPlayer victory = new System.Media.SoundPlayer(@"E:\Music BattleShip\Victory");
-        System.Media.SoundPlayer miss = new System.Media.SoundPlayer(@"E:\Music BattleShip\Water Splash");
-        System.Media.SoundPlayer quit = new System.Media.SoundPlayer(@"E:\Music BattleShip\Shutdown");
+        System.Media.SoundPlayer theme = new System.Media.SoundPlayer(@"E:\Music BattleShip\Theme.wav");
+        System.Media.SoundPlayer cannon = new System.Media.SoundPlayer(@"E:\Music BattleShip\Cannon.wav");
+        System.Media.SoundPlayer gameOver = new System.Media.SoundPlayer(@"E:\Music BattleShip\Lost.wav");
+        System.Media.SoundPlayer victory = new System.Media.SoundPlayer(@"E:\Music BattleShip\Victory.wav");
+        System.Media.SoundPlayer miss = new System.Media.SoundPlayer(@"E:\Music BattleShip\Miss.wav");
+        System.Media.SoundPlayer quit = new System.Media.SoundPlayer(@"E:\Music BattleShip\Shutdown.wav");
 
         public void Theme()
         {
